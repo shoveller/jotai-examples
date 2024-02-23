@@ -1,9 +1,10 @@
+import { useSearchParams } from "react-router-dom";
 import { getList } from "./api";
-import { atom, useAtom } from "jotai";
 import { useQuery } from '@tanstack/react-query'
 
 const List = () => {
-    const [page] = useAtom(pageAtom);
+    const [params] = useSearchParams();
+    const page = Number(params.get('page') || '0')
     const { isError, isLoading, data } = useQuery({
       queryKey: ["pokeData", page],
       queryFn: () => getList(page)
@@ -26,28 +27,19 @@ const List = () => {
 }
 
 const Paginator = () => {
-    const [page, setPage] = useAtom(pageAtom)
+    const [params, setParams] = useSearchParams();
+    const page = Number(params.get('page') || '0')
 
     return (
         <>
-            <button onClick={() => setPage(page - 1)}>-</button>
+            <button onClick={() => setParams({ page: `${page -1}` })}>-</button>
             <span>{page}</span>
-            <button onClick={() => setPage(page + 1)}>+</button>
+            <button onClick={() => setParams({ page: `${page +1}` })}>+</button>
         </>
     )
 }
 
-const pageAtom = atom(0);
-// 타입스크립트를 쓰실때 반환값을 명시하지 마세요. 타입스크립트의 추론을 믿으세요.
-const pokeDataAtom = atom(async (get) => {
-  const page = get(pageAtom);
-  // 비동기 처리
-  const data = await getList(page);
-
-  return data;
-});
-
-const Case2 = () => {
+const Case6 = () => {
   return (
     <>
       <List />
@@ -56,4 +48,4 @@ const Case2 = () => {
   );
 };
 
-export default Case2;
+export default Case6;
