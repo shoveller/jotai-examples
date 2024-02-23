@@ -50,7 +50,7 @@ const Paginator = () => {
   );
 };
 
-const Case8 = () => {
+const Case9 = () => {
   return (
     <>
       <ErrorBoundary fallback={<>에러</>}>
@@ -63,4 +63,4 @@ const Case8 = () => {
   );
 };
 
-export default Case8;
+export default Case9;
