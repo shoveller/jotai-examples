@@ -1,0 +1,9 @@
+- ts + fetch
+- ts + fetch + react-router-dom
+- ts + fetch + jotai + loadable
+- ts + fetch + jotai + suspense
+- ts + fetch + jotai + suspense + react-router-dom + atomFamily
+- ts + fetch + jotai + suspense + react-router-dom + atom in atom
+- ts + fetch + react-query + loadable + react-router-dom
+- ts + fetch + react-query + suspense + react-router-dom
+- ts + fetch + react-query + suspense + react-router-dom + jotai + atom in atom
