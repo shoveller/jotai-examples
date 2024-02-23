@@ -29,7 +29,7 @@ const Layout = () => {
                 <Link to="case7">ts + fetch + react-query + suspense + react-router-dom</Link>
             </li>
             <li>
-                <Link to="case8">ts + fetch + react-query + suspense + react-router-dom + jotai + atom in atom</Link>
+                <Link to="case8">ts + fetch + react-query + suspense + react-router-dom + jotai + atomFamily</Link>
             </li>
         </ul>
         <Outlet/>
