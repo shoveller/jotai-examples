@@ -9,10 +9,12 @@ import {
 } from 'react-router-dom'
 import Layout from './Layout.tsx'
 import Case0 from './Case0.tsx'
+import Case1 from './Case1.tsx'
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={<Layout />}>
     <Route index path="case0" element={<Case0 />} />
+    <Route path="case1" element={<Case1 />} />
   </Route>
 ))
 
