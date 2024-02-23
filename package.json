@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.22.2",
+    "@tanstack/react-query-devtools": "^5.24.0",
     "jotai": "^2.6.5",
     "lodash": "^4.17.21",
     "react": "^18.2.0",
