@@ -22,6 +22,7 @@ import Case5 from './Case5.tsx'
 import Case6 from './Case6.tsx'
 import Case7 from './Case7.tsx'
 import Case8 from './Case8.tsx'
+import Case9 from './Case9.tsx'
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={<Layout />}>
@@ -34,6 +35,7 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route path="case6" element={<Case6/>} />
     <Route path="case7" element={<Case7/>} />
     <Route path="case8" element={<Case8/>} />
+    <Route path="case9" element={<Case9/>} />
   </Route>
 ))
 

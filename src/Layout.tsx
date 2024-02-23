@@ -31,6 +31,9 @@ const Layout = () => {
             <li>
                 <Link to="case8">ts + fetch + react-query + suspense + react-router-dom + jotai + atomFamily</Link>
             </li>
+            <li>
+                <Link to="case9">ts + fetch + react-query + suspense + react-router-dom + jotai + atom in atom</Link>
+            </li>
         </ul>
         <Outlet/>
     </>
